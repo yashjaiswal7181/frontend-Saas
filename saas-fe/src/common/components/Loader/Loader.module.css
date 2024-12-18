@@ -1,0 +1,45 @@
+/* Loader.module.css */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #101112; /* Dark theme background */
+  flex-direction: column;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(255, 255, 255, 0.2); /* Faded border */
+  border-top: 6px solid #ff9800; /* Highlighted top border */
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingText {
+  margin-top: 1rem;
+  color: #f8f9fa;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  animation: fadeIn 2s infinite ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
